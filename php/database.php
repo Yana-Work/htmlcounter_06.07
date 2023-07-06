@@ -23,7 +23,7 @@ class Database {
          SELECT CONSTRAINT_NAME
          FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE
          WHERE REFERENCED_TABLE_NAME = 'domain' 
-            AND REFERENCED_TABLE_SCHEMA = 'counter'
+            AND REFERENCED_TABLE_SCHEMA = 'id20978983_counter'
       ";
       $result = mysqli_query($this->conn, $sqlCheckKeys);
       $keysExist = mysqli_num_rows($result) > 0;
